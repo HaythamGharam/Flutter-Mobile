@@ -2,9 +2,14 @@
 
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:voyage/pages/ContactPage.dart';
+import 'package:voyage/pages/GalleriePage.dart';
 import 'package:voyage/pages/InscriptionPage.dart';
 import 'package:voyage/pages/LoginPage.dart';
 import 'package:voyage/pages/HomePage.dart';
+import 'package:voyage/pages/MeteoPage.dart';
+import 'package:voyage/pages/ParametersPage.dart';
+import 'package:voyage/pages/PaysPage.dart';
 
 void main() {
   runApp(MyApp());
@@ -15,6 +20,11 @@ class MyApp extends StatelessWidget {
     '/inscription': (BuildContext context) => InscriptionPage(),
     '/login': (BuildContext context) => LoginPage(),
     '/home': (BuildContext context) => HomePage(),
+    '/meteo': (BuildContext context) => MeteoPage(),
+    '/contact': (BuildContext context) => ContactPage(),
+    '/parameters': (BuildContext context) => ParametersPage(),
+    '/gallerie': (BuildContext context) => GalleriePage(),
+    '/pays': (BuildContext context) => PaysPage(),
   };
 
   @override
